@@ -249,8 +249,9 @@ if [[ ${_START_DOCKER_SERVICE} == "true" ]]; then
   if [[ ${_DEBUG_ONLY} == "true" ]]; then
     echo ${_PREFIX} service docker start
   else
-    sleep 2
     ${_PREFIX} service docker start
+    sleep 2
+	${_PREFIX} docker ps
   fi
 fi
 
