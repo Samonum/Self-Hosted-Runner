@@ -250,8 +250,7 @@ if [[ ${_START_DOCKER_SERVICE} == "true" ]]; then
     echo ${_PREFIX} service docker start
   else
     ${_PREFIX} service docker start
-    sleep 2
-	${_PREFIX} docker ps
+    ${_PREFIX} service docker start
   fi
 fi
 
