@@ -3,8 +3,6 @@ name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
 
@@ -29,6 +27,5 @@ jobs:
         push: true
         tags: |
           redeshr/scp-girhub-runner:latest
-          redeshr/scp-girhub-runner:${{ steps.meta.outputs.SHORT_SHA }}
         cache-from: type=local,src=/tmp/.buildx-cache
         
