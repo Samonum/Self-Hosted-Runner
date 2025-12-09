@@ -7,5 +7,5 @@ ENV EPHEMERAL='true'
 
 WORKDIR /actions-runner
 
-ENTRYPOINT "/entrypoint.sh"
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["./bin/Runner.Listener", "run", "--startuptype", "service"]
