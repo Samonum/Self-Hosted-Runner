@@ -6,6 +6,7 @@ ENV START_DOCKER_SERVICE='true'
 ENV EPHEMERAL='true'
 
 COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
 
 WORKDIR /actions-runner
 
