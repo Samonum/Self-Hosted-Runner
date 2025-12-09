@@ -7,5 +7,5 @@ ENV EPHEMERAL='true'
 
 WORKDIR /actions-runner
 
-ENTRYPOINT "service docker start && /entrypoint.sh"
-CMD ["./bin/Runner.Listener", "run", "--startuptype", "service"]
+ENTRYPOINT "/entrypoint.sh"
+CMD ["service", "docker", "start", "&&", "./bin/Runner.Listener", "run", "--startuptype", "service"]
