@@ -8,4 +8,4 @@ ENV EPHEMERAL='true'
 WORKDIR /actions-runner
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["./bin/Runner.Listener", "run", "--startuptype", "service", "> test.log"]
+CMD ["./bin/Runner.Listener", "run", "--startuptype", "service", ">> /test.log"]
