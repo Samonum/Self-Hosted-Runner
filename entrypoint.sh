@@ -249,7 +249,7 @@ if [[ ${_START_DOCKER_SERVICE} == "true" ]]; then
   if [[ ${_DEBUG_ONLY} == "true" ]]; then
     echo ${_PREFIX} service docker start
   else
-    while [[$(service docker status) == *"not"*]]
+    while [[ $(service docker status) == *"not"* ]]
     do
         ${_PREFIX} service docker restart
         sleep 2
