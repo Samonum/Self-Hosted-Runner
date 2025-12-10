@@ -253,6 +253,7 @@ if [[ ${_START_DOCKER_SERVICE} == "true" ]]; then
     do
         ${_PREFIX} service docker restart
         sleep 2
+        service docker status
     done
   fi
 fi
