@@ -26,6 +26,6 @@ jobs:
         file: Dockerfile
         push: true
         tags: |
-          redeshr/scp-girhub-runner:latest
+          redeshr/scp-github-runner:latest
         cache-from: type=local,src=/tmp/.buildx-cache
         
