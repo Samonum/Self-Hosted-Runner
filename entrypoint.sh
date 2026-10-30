@@ -1,4 +1,4 @@
-#!/usr/bin/dumb-init /bin/bash
+#!/usr/bin/dumb-init /bin/bash 
 # shellcheck shell=bash
 
 export RUNNER_ALLOW_RUNASROOT=1
