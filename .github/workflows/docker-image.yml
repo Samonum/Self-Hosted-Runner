@@ -19,8 +19,9 @@ jobs:
         username: redeshr
         password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
-    - name: Show Password
-      run: echo ${{ secrets.DOCKER_HUB_TOKEN }}
+    - name: Docker Setup Docker
+      uses: docker/setup-docker-action@v5.6.0
+
 
     - name: Build and push production image
       uses: docker/build-push-action@v6
